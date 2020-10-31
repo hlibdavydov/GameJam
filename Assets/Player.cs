@@ -1,16 +1,22 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    
-    void Start()
+    private static Player player;
+
+    private void Start()
     {
-        
-    }
-    void Update()
-    {
-        
+        if (player != null)
+        {
+            Destroy(gameObject);
+        }
+        else
+        {
+            player = this;
+            DontDestroyOnLoad(gameObject);
+        }
     }
 }
