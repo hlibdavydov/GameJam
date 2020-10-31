@@ -1420,8 +1420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 17.72, y: -57.85}
-  m_SizeDelta: {x: 203.34303, y: 115.70494}
+  m_AnchoredPosition: {x: 27.92, y: -81.17}
+  m_SizeDelta: {x: 223.74156, y: 162.34273}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1856088325
 MonoBehaviour:
@@ -1456,7 +1456,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Znajd\u017A odpowiedni kabel do przeci\u0119cia poprzez znalezienie kabla
-    po\u0142\u0105czonego z prze\u0142\u0105cznikiem \u015Bwiat\u0142a"
+    po\u0142\u0105czonego z prze\u0142\u0105cznikiem \u015Bwiat\u0142a i przetnij
+    go przyciskiem enter"
 --- !u!222 &1856088326
 CanvasRenderer:
   m_ObjectHideFlags: 0
