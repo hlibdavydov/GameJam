@@ -1,22 +1,34 @@
 fileFormatVersion: 2
-guid: 3667063fad177554cb385d3ed4459423
+guid: 85716fb8533d7684caf2e403362f1478
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4511150951784404969
-    second: player_run_up_0
+      213: -8579715042886136428
+    second: Tile_Map_Game_0
   - first:
-      213: 1362091286037594128
-    second: player_run_up_1
+      213: -7904562429215579495
+    second: Tile_Map_Game_1
   - first:
-      213: 2966202603675032162
-    second: player_run_up_2
+      213: -7513279500394971805
+    second: Tile_Map_Game_0
   - first:
-      213: -521743404791653254
-    second: player_run_up_3
+      213: -4828421891329724783
+    second: Tile_Map_Game_2
   - first:
-      213: 5642066687940308637
-    second: player_run_up_4
+      213: -6224900583390093029
+    second: Tile_Map_Game_3
+  - first:
+      213: 7639427889480189419
+    second: Tile_Map_Game_4
+  - first:
+      213: 7046199852669941952
+    second: Tile_Map_Game_5
+  - first:
+      213: -4489452481805221142
+    second: Tile_Map_Game_6
+  - first:
+      213: 7179403905205287652
+    second: Tile_Map_Game_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -126,106 +138,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: player_run_up_0
+      name: Tile_Map_Game_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 0
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36dbbb8f9187bb790800000000000000
+      internalID: -7513279500394971805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Game_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 992e4bdc95a5d4290800000000000000
+      internalID: -7904562429215579495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Game_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e62953fdffdfcb0800000000000000
+      internalID: -4828421891329724783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Game_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 144
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1169ec76e5bc99a0800000000000000
+      internalID: -6224900583390093029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tile_Map_Game_4
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 128
-        width: 20
-        height: 38
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e75649b3e3da9e30800000000000000
-      internalID: 4511150951784404969
+      spriteID: be5cda7a033b40a60800000000000000
+      internalID: 7639427889480189419
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_up_1
+      name: Tile_Map_Game_5
       rect:
         serializedVersion: 2
-        x: 88
+        x: 16
         y: 128
-        width: 20
-        height: 37
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0100de7dece17e210800000000000000
-      internalID: 1362091286037594128
+      spriteID: 0c83dc20f6129c160800000000000000
+      internalID: 7046199852669941952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_up_2
+      name: Tile_Map_Game_6
       rect:
         serializedVersion: 2
-        x: 24
-        y: 64
-        width: 20
-        height: 36
+        x: 32
+        y: 128
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26a93eb6d811a2920800000000000000
-      internalID: 2966202603675032162
+      spriteID: ae2010201c242b1c0800000000000000
+      internalID: -4489452481805221142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: player_run_up_3
+      name: Tile_Map_Game_7
       rect:
         serializedVersion: 2
-        x: 88
-        y: 65
-        width: 20
-        height: 36
+        x: 0
+        y: 112
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7c9d7d332562c8f0800000000000000
-      internalID: -521743404791653254
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player_run_up_4
-      rect:
-        serializedVersion: 2
-        x: 24
-        y: 0
-        width: 20
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d9e2fbd72c5ac4e40800000000000000
-      internalID: 5642066687940308637
+      spriteID: 4ea30dc40dd52a360800000000000000
+      internalID: 7179403905205287652
       vertices: []
       indices: 
       edges: []
@@ -233,7 +308,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: c0a3fff0e41d300499c1f897a2c05d0f
     internalID: 0
     vertices: []
     indices: 
