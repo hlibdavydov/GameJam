@@ -5,8 +5,8 @@ using UnityEngine;
 public class ZmianaDlugosci : MonoBehaviour
 {
 
-    float changeSpeed = 0.005f;
-    float timeToChange = 3f;
+    float changeSpeed = 0.9f;
+    float timeToChange = 3.1f;
     bool shorten;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class ZmianaDlugosci : MonoBehaviour
         timeToChange -= Time.deltaTime;
         if (timeToChange <= 0)
         {
-            timeToChange = 1.8f;
+            timeToChange = 3.1f;
             if (shorten)
             {
                 shorten = false;
@@ -32,11 +32,11 @@ public class ZmianaDlugosci : MonoBehaviour
         }
         if (shorten)
         {
-            transform.localScale -= new Vector3(0, changeSpeed, 0);
+            transform.localScale -= new Vector3(0, changeSpeed *Time.deltaTime, 0);
         }
         else
         {
-            transform.localScale += new Vector3(0, changeSpeed, 0);
+            transform.localScale += new Vector3(0, changeSpeed *Time.deltaTime, 0);
         }
     }
 }
