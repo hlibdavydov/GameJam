@@ -16,7 +16,7 @@ public class MovementController : MonoBehaviour
 
     void Start()
     {
-        rigidbody2D = gameObject.AddComponent<Rigidbody2D>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
         rigidbody2D.gravityScale = 0;
         animator = GetComponent<Animator>();
         
