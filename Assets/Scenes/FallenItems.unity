@@ -214,6 +214,7 @@ GameObject:
   - component: {fileID: 58378043}
   - component: {fileID: 58378042}
   - component: {fileID: 58378041}
+  - component: {fileID: 58378044}
   m_Layer: 0
   m_Name: Fallen item green
   m_TagString: FallenItem
@@ -248,6 +249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: Green
+  rb: {fileID: 0}
 --- !u!61 &58378042
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -324,6 +326,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &58378044
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58378039}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &129660653
 GameObject:
   m_ObjectHideFlags: 0
@@ -506,7 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  timeLeft: 20
+  timeLeft: 15
   itemsToPlace: 3
 --- !u!50 &276465380
 Rigidbody2D:
@@ -1466,6 +1489,7 @@ GameObject:
   - component: {fileID: 1557259063}
   - component: {fileID: 1557259061}
   - component: {fileID: 1557259062}
+  - component: {fileID: 1557259065}
   m_Layer: 0
   m_Name: Fallen item yellow
   m_TagString: FallenItem
@@ -1512,6 +1536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: Yellow
+  rb: {fileID: 0}
 --- !u!212 &1557259063
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1576,6 +1601,27 @@ Transform:
   m_Father: {fileID: 1241130978}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &1557259065
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557259060}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1562297996
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +1823,7 @@ GameObject:
   - component: {fileID: 1643279520}
   - component: {fileID: 1643279519}
   - component: {fileID: 1643279518}
+  - component: {fileID: 1643279521}
   m_Layer: 0
   m_Name: Fallen item blue
   m_TagString: FallenItem
@@ -1811,6 +1858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: Blue
+  rb: {fileID: 0}
 --- !u!61 &1643279519
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1887,6 +1935,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1643279521
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1643279516}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1658162593
 GameObject:
   m_ObjectHideFlags: 0
