@@ -9,12 +9,23 @@ public class PinCode:MonoBehaviour
     private static string key="1234";
     private string currPin=string.Empty;
     public Text screenText;
+    private bool isOn;
+    private Animator animator;
+    [SerializeField] private GameObject statusButton;
+    
     public void Start()
     {
-        this.screenText=(Text)GetComponent("PinCode");
+        this.screenText.text = "Error";
+        animator = statusButton.GetComponent<Animator>();
     }
     public void Update()
     {
+        //animator.SetBool("isWorking", isOn);
+        if (!isOn)
+        {
+            OnClearKeyPressed();
+            return;
+        }
         this.screenText.text=this.currPin;
     }
     public void On1KeyPressed()
