@@ -2025,6 +2025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltip: {fileID: 1523786770}
+  scene: 
 --- !u!4 &1959910223
 Transform:
   m_ObjectHideFlags: 0

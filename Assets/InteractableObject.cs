@@ -2,15 +2,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private GameObject tooltip;
+    [SerializeField] private string scene;
+    
     private bool isActive;
 
     private void Update()
     {
-        if()
+        if (!isActive) return;
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            LoadMinigame();
+        }
+    }
+
+    private void LoadMinigame()
+    {
+        SceneManager.LoadScene(scene);
     }
 
     private void Start()
