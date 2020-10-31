@@ -9,6 +9,8 @@ TagManager:
   - WireToCut
   - Laser
   - Goal
+  - FallenItem
+  - Platform
   layers:
   - Default
   - TransparentFX
