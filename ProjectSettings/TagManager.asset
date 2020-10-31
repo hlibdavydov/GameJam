@@ -7,6 +7,8 @@ TagManager:
   - Wire
   - Cuttable
   - WireToCut
+  - Laser
+  - Goal
   layers:
   - Default
   - TransparentFX
