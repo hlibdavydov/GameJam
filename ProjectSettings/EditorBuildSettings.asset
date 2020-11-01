@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PinCode.unity
     guid: 8e2907724e32dcf439fb1a13a25da091
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: 6e920adfd2dadc94ca73c83fb6eed55f
   m_configObjects: {}
