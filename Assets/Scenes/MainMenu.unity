@@ -1876,6 +1876,33 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 332237697296930644, guid: 20095ab80c9f32e4bb0e0e7e0df5c829,
+        type: 3}
+      propertyPath: m_text
+      value: 'Game title: "Night Robbery"
+
+        Date of creation: 31.10.2020
+
+        Authors:
+
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 332237697296930644, guid: 20095ab80c9f32e4bb0e0e7e0df5c829,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 332237697296930644, guid: 20095ab80c9f32e4bb0e0e7e0df5c829,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 332237697296930644, guid: 20095ab80c9f32e4bb0e0e7e0df5c829,
+        type: 3}
+      propertyPath: m_textInfo.spaceCount
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 332237697613914262, guid: 20095ab80c9f32e4bb0e0e7e0df5c829,
         type: 3}
       propertyPath: m_LocalPosition.x
