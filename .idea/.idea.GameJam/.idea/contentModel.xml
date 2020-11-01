@@ -23,6 +23,7 @@
             <e p="PlatformScript.cs" t="Include" />
           </e>
           <e p="Laser" t="Include">
+            <e p="LaserAnimation.cs" t="Include" />
             <e p="Move.cs" t="Include" />
             <e p="Obracanie.cs" t="Include" />
             <e p="ZmianaDlugosci.cs" t="Include" />
