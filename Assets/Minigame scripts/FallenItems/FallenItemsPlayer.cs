@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class FallenItemsPlayer : MonoBehaviour
 {
@@ -35,8 +36,7 @@ public class FallenItemsPlayer : MonoBehaviour
 
         if (timeLeft <= 0)
         {
-            //scena lose
-            print("lose");
+            Lose();
         }
         else
         {
@@ -72,16 +72,26 @@ public class FallenItemsPlayer : MonoBehaviour
                     itemsToPlace--;
                     if(itemsToPlace == 0)
                     {
-                        //scena win
-                        print("win");
+                        Win();
                     }
                 }
                 else
                 {
-                    //scena lose
-                    print("lose");
+                    Lose();
                 }
             }
         }
+    }
+
+    private void Win()
+    {
+        Player._playerProgress.vaseGameFinished = true;
+        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Level2", LoadSceneMode.Additive);
+    }
+
+    private void Lose()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

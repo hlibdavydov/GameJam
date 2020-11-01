@@ -44,11 +44,20 @@
             </e>
           </e>
         </e>
+        <e p="Prefabs" t="Include">
+          <e p="Y.cs" t="Include" />
+        </e>
         <e p="ScreamAnimation.cs" t="Include" />
         <e p="ScreamPainting.cs" t="Include" />
         <e p="ScreenKey.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="ExitTrigger.cs" t="Include" />
+          <e p="GuardMovement.cs" t="Include" />
+          <e p="GuradTriggering.cs" t="Include" />
+          <e p="LightRotating.cs" t="Include" />
+          <e p="LightTriggering.cs" t="Include" />
           <e p="MainMenu.cs" t="Include" />
+          <e p="PlayerMovement.cs" t="Include" />
           <e p="PlayerProgress.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
@@ -121,6 +130,7 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="VaseToBreak.cs" t="Include" />
       </e>
       <e p="GameJam.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

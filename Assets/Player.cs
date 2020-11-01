@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DefaultNamespace;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -11,7 +12,6 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-
     }
 
     private void Start()
@@ -29,16 +29,17 @@ public class Player : MonoBehaviour
 
     private void OnEnable()
     {
-        if (_playerProgress == null) return;
-        transform.position = _playerProgress.position;
+        if (SceneManager.GetActiveScene().name == "MainScene")
+        {
+            if (_playerProgress == null) return;
+            transform.position = _playerProgress.position;
 
-        if (_playerProgress.pinCodeGameFinished)
+            if (_playerProgress.pinCodeGameFinished)
+            {
+                doorToNextLevel.GetComponent<InteractableObject>().isOpen = true;
+            }
+        }else if(SceneManager.GetActiveScene().name == "Level2")
         {
-            doorToNextLevel.GetComponent<InteractableObject>().isOpen = true;
-        }
-        if (_playerProgress.wiresGameFinished)
-        {
-            
         }
     }
 }

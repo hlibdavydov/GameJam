@@ -10,5 +10,6 @@ namespace DefaultNamespace
         public bool vaseGameFinished;
         public bool laserGameFinished;
         public bool copsGameFinished;
+        public bool mazeGameFinished;
     }
 }

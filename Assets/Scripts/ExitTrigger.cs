@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ExitTrigger:MonoBehaviour
+public class ExitTrigger : MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.name=="Player") SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+        SceneManager.LoadScene("MainMenu");
     }
 }
