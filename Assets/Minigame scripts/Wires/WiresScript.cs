@@ -11,8 +11,8 @@ public class WiresScript : MonoBehaviour
     private Rigidbody2D rb;
     // Public do testowania, po stworzeniu odpowiednich grafik można usunąć
     public bool lit;
-    public bool cutToLose;
-    public bool cutToWin;
+    private bool cutToLose;
+    private bool cutToWin;
 
     // Start is called before the first frame update
     void Start()
