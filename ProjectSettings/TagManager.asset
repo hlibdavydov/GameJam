@@ -9,6 +9,7 @@ TagManager:
   - WireToCut
   - Laser
   - Goal
+  - Guard
   layers:
   - Default
   - TransparentFX
