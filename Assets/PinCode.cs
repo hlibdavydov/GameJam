@@ -6,10 +6,11 @@ using UnityEngine.UI;
 
 public class PinCode:MonoBehaviour
 {
-    private static string key="1234";
+    [SerializeField]
+     private string key="6122";
     private string currPin=string.Empty;
     public Text screenText;
-    private bool isOn;
+    public bool isOn;
     private Animator animator;
     [SerializeField] private GameObject statusButton;
     
@@ -17,10 +18,11 @@ public class PinCode:MonoBehaviour
     {
         this.screenText.text = "Error";
         animator = statusButton.GetComponent<Animator>();
+        isOn = Player._playerProgress.wiresGameFinished;
     }
     public void Update()
     {
-        //animator.SetBool("isWorking", isOn);
+        animator.SetBool("isWorking", isOn);
         if (!isOn)
         {
             OnClearKeyPressed();
@@ -70,12 +72,15 @@ public class PinCode:MonoBehaviour
     }
     public void OnEnterKeyPressed()
     {
-        if(this.currPin.Equals(PinCode.key))
+        if(this.currPin.Equals(key))
         {
-            //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
-            Debug.Log("yes");
+            Player._playerProgress.pinCodeGameFinished = true;
+            SceneManager.LoadScene("MainScene");
         }
-        else Debug.Log("no");
+        else
+        {
+            print("not ok");
+        }
     }
     public void OnClearKeyPressed()
     {

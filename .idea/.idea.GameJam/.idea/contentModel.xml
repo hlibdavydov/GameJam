@@ -13,6 +13,7 @@
         <e p="EscapeButton.cs" t="Include" />
         <e p="FlashingStars.cs" t="Include" />
         <e p="FollowingCamera.cs" t="Include" />
+        <e p="FuseBox.cs" t="Include" />
         <e p="InteractableObject.cs" t="Include" />
         <e p="KeyDropzone.cs" t="Include" />
         <e p="Minigame scripts" t="Include">
@@ -43,9 +44,12 @@
             </e>
           </e>
         </e>
+        <e p="ScreamAnimation.cs" t="Include" />
+        <e p="ScreamPainting.cs" t="Include" />
         <e p="ScreenKey.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="MainMenu.cs" t="Include" />
+          <e p="PlayerProgress.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

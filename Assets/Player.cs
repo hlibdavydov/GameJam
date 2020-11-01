@@ -1,22 +1,44 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private static Player player;
+    public static PlayerProgress _playerProgress;
+    [SerializeField] private GameObject doorToNextLevel;
+
+    private void Awake()
+    {
+
+    }
 
     private void Start()
     {
-        if (player != null)
+        if (_playerProgress == null)
         {
-            Destroy(gameObject);
+            _playerProgress = new PlayerProgress();
         }
-        else
+    }
+
+    private void Update()
+    {
+        _playerProgress.position = transform.position;
+    }
+
+    private void OnEnable()
+    {
+        if (_playerProgress == null) return;
+        transform.position = _playerProgress.position;
+
+        if (_playerProgress.pinCodeGameFinished)
         {
-            player = this;
-            DontDestroyOnLoad(gameObject);
+            doorToNextLevel.GetComponent<InteractableObject>().isOpen = true;
+        }
+        if (_playerProgress.wiresGameFinished)
+        {
+            
         }
     }
 }
