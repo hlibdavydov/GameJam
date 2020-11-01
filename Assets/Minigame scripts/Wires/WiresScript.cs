@@ -9,7 +9,6 @@ public class WiresScript : MonoBehaviour
 
     float speed = 200;
     private Rigidbody2D rb;
-    // Public do testowania, po stworzeniu odpowiednich grafik można usunąć
     public bool lit;
     private bool cutToLose;
     private bool cutToWin;
