@@ -1,26 +1,35 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
 
 public class ScreamAnimation : MonoBehaviour
 {
-
-    [SerializeField] bool startAnimation;
+    [SerializeField] private GameObject fuseBoxToActivate;
     [SerializeField] float distanceToTravel = 0.5f;
     [SerializeField] float timeToTravel = 2f;
     float speed;
+    bool startAnimation;
     private Rigidbody2D rb;
 
-    // Start is called before the first frame update
     void Start()
     {
         startAnimation = false;
         speed = distanceToTravel / timeToTravel;
         rb = GetComponent<Rigidbody2D>();
+        fuseBoxToActivate.SetActive(false);
     }
 
-    // Update is called once per frame
+    private void OnMouseUpAsButton()
+    {
+        startAnimation = true;
+
+        fuseBoxToActivate.SetActive(true);
+        Destroy(GetComponent<InteractableObject>().tooltip);
+        Destroy(GetComponent<InteractableObject>());
+    }
+
     void Update()
     {
         if (startAnimation)

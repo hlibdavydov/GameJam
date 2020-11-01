@@ -1,22 +1,31 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private static Player player;
+    private static PlayerPosition playerPosition;
 
     private void Start()
     {
-        if (player != null)
+        if (playerPosition == null)
         {
-            Destroy(gameObject);
+            playerPosition = new PlayerPosition();
         }
-        else
+    }
+
+    private void Update()
+    {
+        playerPosition.position = transform.position;
+    }
+
+    private void OnEnable()
+    {
+        if (playerPosition != null)
         {
-            player = this;
-            DontDestroyOnLoad(gameObject);
+            transform.position = playerPosition.position;
         }
     }
 }
