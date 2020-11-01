@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Preloading.unity
+    guid: 5c59bc3a4b0be1646a10664cbc385ad3
+  - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 00b76ffc0ac108e4a90d42808b45df01
   - enabled: 1
@@ -26,9 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FallenItems.unity
     guid: b6e0a420529b0b241adec8a66b58f06a
-  - enabled: 1
-    path: Assets/Scenes/Preloading.unity
-    guid: 5c59bc3a4b0be1646a10664cbc385ad3
   - enabled: 1
     path: Assets/Scenes/TheGuards.unity
     guid: 1df33dfe07f1ef1499fdaacafe63f603
