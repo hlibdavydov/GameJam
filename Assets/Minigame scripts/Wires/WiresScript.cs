@@ -3,21 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class WiresScript : MonoBehaviour
 {
 
     float speed = 200;
     private Rigidbody2D rb;
-    public bool lit;
     private bool cutToLose;
     private bool cutToWin;
-
+    private SpriteRenderer sr;
+    public Sprite on, off;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        lit = false;
+        sr = GetComponent<SpriteRenderer>();
+        
     }
 
     // Update is called once per frame
@@ -40,13 +42,17 @@ public class WiresScript : MonoBehaviour
                     print("win");
                 }
             }
-            
+            if (Input.GetKey(KeyCode.K))
+            {
+                // SceneManager.LoadScene("Win");
+                print("win");
+            }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        lit = true;
+        sr.sprite = on;
         if (collision.gameObject.CompareTag("Cuttable"))
         {
             cutToLose = true;
@@ -58,7 +64,7 @@ public class WiresScript : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        lit = false;
+        sr.sprite = off;
         cutToLose = false;
         cutToWin = false;
     }
