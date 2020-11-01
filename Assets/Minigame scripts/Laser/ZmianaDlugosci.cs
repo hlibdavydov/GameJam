@@ -6,7 +6,7 @@ public class ZmianaDlugosci : MonoBehaviour
 {
 
     float changeSpeed = 0.9f;
-    float timeToChange = 3.1f;
+    float timeToChange = 3.7f;
     bool shorten;
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,7 @@ public class ZmianaDlugosci : MonoBehaviour
         timeToChange -= Time.deltaTime;
         if (timeToChange <= 0)
         {
-            timeToChange = 3.1f;
+            timeToChange = 3.7f;
             if (shorten)
             {
                 shorten = false;
