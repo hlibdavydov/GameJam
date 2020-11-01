@@ -21,6 +21,8 @@ public class InteractableObject : MonoBehaviour
             if (scene == null) return;
             if (isOpen)
             {
+                
+                Destroy(gameObject);
                 SceneManager.LoadScene(nextLevel, LoadSceneMode.Additive);
             }
             else
