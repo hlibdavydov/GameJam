@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/CabelsHell.unity
-    guid: f2c408dad41908f4f9a57327a891256a
+    path: Assets/Scenes/MainMenu.unity
+    guid: 00b76ffc0ac108e4a90d42808b45df01
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/CabelsHell.unity
+    guid: f2c408dad41908f4f9a57327a891256a
+  - enabled: 1
+    path: Assets/Scenes/Laser.unity
+    guid: 863a20b59592b8d4a89aee8e163d65f3
   - enabled: 1
     path: Assets/Scenes/PinCode.unity
     guid: 8e2907724e32dcf439fb1a13a25da091
@@ -24,15 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/FallenItems.unity
     guid: b6e0a420529b0b241adec8a66b58f06a
   - enabled: 1
-    path: Assets/Scenes/TheGuards.unity
-    guid: 1df33dfe07f1ef1499fdaacafe63f603
-  - enabled: 1
     path: Assets/Scenes/Preloading.unity
     guid: 5c59bc3a4b0be1646a10664cbc385ad3
   - enabled: 1
-    path: Assets/Scenes/Laser.unity
-    guid: 863a20b59592b8d4a89aee8e163d65f3
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 00b76ffc0ac108e4a90d42808b45df01
+    path: Assets/Scenes/TheGuards.unity
+    guid: 1df33dfe07f1ef1499fdaacafe63f603
   m_configObjects: {}
