@@ -10,6 +10,5 @@ public class EscapeButton : MonoBehaviour
     public void LoadMainScreen()
     {
         SceneManager.LoadScene("MainScene");
-        print("Clicked");
     }
 }
