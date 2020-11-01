@@ -13,7 +13,7 @@ public class StartLasers : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && !Player._playerProgress.laserGameFinished)
         {
             SceneManager.LoadScene("Laser");
         }

@@ -39,6 +39,7 @@ public class Move : MonoBehaviour
         else if (collision.gameObject.CompareTag("Goal"))
         {
             SceneManager.LoadScene("MainScene");
+            Player._playerProgress.laserGameFinished = true;
         }
     }
 }
