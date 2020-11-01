@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tooltip: {fileID: 297674368}
-  scene: MainMenu
+  scene: TheGuards
   nextLevel: 
   isOpen: 0
 --- !u!61 &1307367
