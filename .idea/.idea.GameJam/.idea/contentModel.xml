@@ -49,7 +49,7 @@
         <e p="ScreenKey.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="MainMenu.cs" t="Include" />
-          <e p="PlayerPosition.cs" t="Include" />
+          <e p="PlayerProgress.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Examples &amp; Extras" t="Include">

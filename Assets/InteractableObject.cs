@@ -8,19 +8,29 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] public GameObject tooltip;
     [SerializeField] private string scene;
+    [SerializeField] string nextLevel;
+
     public Action OnInteraction;
     private bool isActive;
+    public bool isOpen;
 
-    
     private void Start()
     {
         OnInteraction = () =>
         {
             if (scene == null) return;
-            SceneManager.LoadScene(scene);
+            if (isOpen)
+            {
+                SceneManager.LoadScene(nextLevel);
+            }
+            else
+            {
+                SceneManager.LoadScene(scene);
+            }
         };
         tooltip.SetActive(false);
     }
+
     private void Update()
     {
         if (!isActive) return;

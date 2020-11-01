@@ -362,6 +362,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 2125678486}
   scene: 
+  nextLevel: 
+  isOpen: 0
 --- !u!114 &153690997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -541,6 +543,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 1220185594}
   scene: 
+  nextLevel: 
+  isOpen: 0
 --- !u!212 &198552313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -953,6 +957,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 206de6d341e34bf4fa4c271f799ae245, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  doorToNextLevel: {fileID: 1959910221}
 --- !u!1 &636211801
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,6 +1056,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 153120322}
   scene: CabelsHell
+  nextLevel: 
+  isOpen: 0
 --- !u!61 &636211805
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1228,6 +1235,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 1035401847}
   scene: 
+  nextLevel: 
+  isOpen: 0
 --- !u!212 &773811084
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1932,6 +1941,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 1118054398}
   scene: 
+  nextLevel: 
+  isOpen: 0
 --- !u!212 &1550417204
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2023,6 +2034,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 272390396}
   scene: 
+  nextLevel: 
+  isOpen: 0
 --- !u!1 &1959910221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tooltip: {fileID: 1523786770}
   scene: PinCode
+  nextLevel: 
+  isOpen: 0
 --- !u!4 &1959910223
 Transform:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ public class PinCode:MonoBehaviour
      private string key="6122";
     private string currPin=string.Empty;
     public Text screenText;
-    private bool isOn;
+    public bool isOn;
     private Animator animator;
     [SerializeField] private GameObject statusButton;
     
@@ -18,6 +18,7 @@ public class PinCode:MonoBehaviour
     {
         this.screenText.text = "Error";
         animator = statusButton.GetComponent<Animator>();
+        isOn = Player._playerProgress.wiresGameFinished;
     }
     public void Update()
     {
@@ -73,7 +74,8 @@ public class PinCode:MonoBehaviour
     {
         if(this.currPin.Equals(key))
         {
-            print("Ok");
+            Player._playerProgress.pinCodeGameFinished = true;
+            SceneManager.LoadScene("MainScene");
         }
         else
         {

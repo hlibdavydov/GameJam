@@ -38,16 +38,20 @@ public class WiresScript : MonoBehaviour
                 }
                 else if (cutToWin)
                 {
-                    // SceneManager.LoadScene("Win");
-                    print("win");
+                    Win();
                 }
             }
             if (Input.GetKey(KeyCode.K))
             {
-                // SceneManager.LoadScene("Win");
-                print("win");
+                Win();
             }
         }
+    }
+
+    private void Win()
+    {
+        Player._playerProgress.wiresGameFinished = true;
+        SceneManager.LoadScene("MainScene");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

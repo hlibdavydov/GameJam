@@ -6,26 +6,39 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private static PlayerPosition playerPosition;
+    public static PlayerProgress _playerProgress;
+    [SerializeField] private GameObject doorToNextLevel;
+
+    private void Awake()
+    {
+
+    }
 
     private void Start()
     {
-        if (playerPosition == null)
+        if (_playerProgress == null)
         {
-            playerPosition = new PlayerPosition();
+            _playerProgress = new PlayerProgress();
         }
     }
 
     private void Update()
     {
-        playerPosition.position = transform.position;
+        _playerProgress.position = transform.position;
     }
 
     private void OnEnable()
     {
-        if (playerPosition != null)
+        if (_playerProgress == null) return;
+        transform.position = _playerProgress.position;
+
+        if (_playerProgress.pinCodeGameFinished)
         {
-            transform.position = playerPosition.position;
+            doorToNextLevel.GetComponent<InteractableObject>().isOpen = true;
+        }
+        if (_playerProgress.wiresGameFinished)
+        {
+            
         }
     }
 }
