@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using System;
 
 public class FallenItemsPlayer : MonoBehaviour
 {
@@ -12,6 +14,7 @@ public class FallenItemsPlayer : MonoBehaviour
     private GameObject holding;
     [SerializeField] float timeLeft;
     [SerializeField] int itemsToPlace;
+    public Text text;
 
     // Start is called before the first frame update
     void Start()
@@ -19,6 +22,7 @@ public class FallenItemsPlayer : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         GetComponent<Rigidbody2D>().gravityScale = 0;
         carryingItem = false;
+        text.text = Math.Floor(timeLeft).ToString();
     }
 
     // Update is called once per frame
@@ -28,10 +32,15 @@ public class FallenItemsPlayer : MonoBehaviour
         float verticalMovement = Input.GetAxis("Vertical");
         movement = new Vector2(horizontalMovement, verticalMovement).normalized;
         timeLeft -= Time.deltaTime;
+
         if (timeLeft <= 0)
         {
             //scena lose
             print("lose");
+        }
+        else
+        {
+            text.text = Math.Floor(timeLeft).ToString();
         }
     }
 
