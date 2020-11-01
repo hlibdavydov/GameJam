@@ -21,7 +21,7 @@ public class InteractableObject : MonoBehaviour
             if (scene == null) return;
             if (isOpen)
             {
-                SceneManager.LoadScene(nextLevel);
+                SceneManager.LoadScene(nextLevel, LoadSceneMode.Additive);
             }
             else
             {
