@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Preloading.unity
     guid: 5c59bc3a4b0be1646a10664cbc385ad3
+  - enabled: 1
+    path: Assets/Scenes/Laser.unity
+    guid: 863a20b59592b8d4a89aee8e163d65f3
   m_configObjects: {}
