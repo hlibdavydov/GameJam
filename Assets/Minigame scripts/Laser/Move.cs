@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Move : MonoBehaviour
 {
@@ -33,11 +34,11 @@ public class Move : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Laser"))
         {
-            print("lose");
+            SceneManager.LoadScene("Laser");
         }
         else if (collision.gameObject.CompareTag("Goal"))
         {
-            print("win");
+            SceneManager.LoadScene("MainScene");
         }
     }
 }
