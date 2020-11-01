@@ -16,6 +16,11 @@
         <e p="InteractableObject.cs" t="Include" />
         <e p="KeyDropzone.cs" t="Include" />
         <e p="Minigame scripts" t="Include">
+          <e p="FallenItems" t="Include">
+            <e p="FallenItemsPlayer.cs" t="Include" />
+            <e p="FallenItemsScript.cs" t="Include" />
+            <e p="PlatformScript.cs" t="Include" />
+          </e>
           <e p="Laser" t="Include">
             <e p="Move.cs" t="Include" />
             <e p="Obracanie.cs" t="Include" />
